@@ -1,0 +1,9 @@
+[submodule "apps/accounts"]
+	path = apps/accounts
+	url = https://github.com/tkendi/accounts.tkendi.nl
+[submodule "apps/finance"]
+	path = apps/finance
+	url = https://github.com/tkendi/finance-tkendi/
+[submodule "apps/status"]
+	path = apps/status
+	url = https://github.com/tkendi/status.tkendi.nl
