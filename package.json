@@ -6,6 +6,7 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
@@ -17,5 +18,8 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
