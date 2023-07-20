@@ -7,3 +7,6 @@
 [submodule "apps/status"]
 	path = apps/status
 	url = https://github.com/tkendi/status.tkendi.nl
+[submodule "packages/colors"]
+	path = packages/colors
+	url = https://github.com/tkendi/colors.git
