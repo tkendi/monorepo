@@ -14,7 +14,7 @@ jobs:
       - name: Build
         run: |
           yarn install
-          yarn env:dev && yarn build
+          yarn build
 
       - uses: go-semantic-release/action@v1
         id: semrel
