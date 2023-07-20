@@ -10,3 +10,6 @@
 [submodule "packages/colors"]
 	path = packages/colors
 	url = https://github.com/tkendi/colors.git
+[submodule "packages/terraform"]
+	path = packages/terraform
+	url = https://github.com/tkendi/nextjs-terraform.git

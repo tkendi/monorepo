@@ -14,7 +14,7 @@
     "turbo": "^1.9.3"
   },
   "name": "tkendi-monorepo",
-  "packageManager": "yarn@1.22.19",
+  "packageManager": "pnpm@8.6.9",
   "workspaces": [
     "apps/*",
     "packages/*"
