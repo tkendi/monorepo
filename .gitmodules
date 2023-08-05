@@ -7,9 +7,9 @@
 [submodule "apps/status"]
 	path = apps/status
 	url = https://github.com/tkendi/status.tkendi.nl
-[submodule "packages/colors"]
-	path = packages/colors
-	url = https://github.com/tkendi/colors.git
 [submodule "packages/terraform"]
 	path = packages/terraform
-	url = https://github.com/tkendi/nextjs-terraform.git
+	url = https://github.com/tkendi/nextjs-terraform
+[submodule "packages/colors"]
+	path = packages/colors
+	url = https://github.com/tkendi/colors
