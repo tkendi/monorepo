@@ -4,6 +4,7 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
+      "env": ["NEXT_PUBLIC_HOST", "REDIS_HOST", "REDIS_PASSWORD", "REDIS_PORT"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "lint": {},
