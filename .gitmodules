@@ -13,3 +13,6 @@
 [submodule "packages/colors"]
 	path = packages/colors
 	url = https://github.com/tkendi/colors
+[submodule "apps/admin"]
+	path = apps/admin
+	url = https://github.com/tkendi/admin.tkendi.nl
