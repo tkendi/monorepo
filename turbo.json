@@ -4,7 +4,27 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "env": ["NEXT_PUBLIC_GRAPHQL_BASE_URL","NEXT_PUBLIC_HOST", "REDIS_HOST", "REDIS_PASSWORD", "REDIS_PORT"],
+      "env": ["NEXT_PUBLIC_GRAPHQL_BASE_URL","NEXT_PUBLIC_HOST", "TOKEN"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "accounts#build": {
+      "dependsOn": ["^build"],
+      "env": ["KV_URL", "KV_REST_API_URL", "KV_REST_API_TOKEN", "KV_REST_API_READ_ONLY_TOKEN"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "finance#build": {
+      "dependsOn": ["^build"],
+      "env": [""],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "status#build": {
+      "dependsOn": ["^build"],
+      "env": ["NEXT_PUBLIC_FINANCE_API"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "admin#build": {
+      "dependsOn": ["^build"],
+      "env": ["KV_URL", "KV_REST_API_URL", "KV_REST_API_TOKEN", "KV_REST_API_READ_ONLY_TOKEN"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "lint": {},
