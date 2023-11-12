@@ -9,7 +9,7 @@
     },
     "accounts#build": {
       "dependsOn": ["^build"],
-      "env": ["KV_URL", "KV_REST_API_URL", "KV_REST_API_TOKEN", "KV_REST_API_READ_ONLY_TOKEN"],
+      "env": ["KV_URL", "KV_REST_API_URL", "KV_REST_API_TOKEN", "KV_REST_API_READ_ONLY_TOKEN", "REDIS_HOST", "REDIS_PASSWORD", "REDIS_PORT"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "finance#build": {
@@ -24,7 +24,7 @@
     },
     "admin#build": {
       "dependsOn": ["^build"],
-      "env": ["KV_URL", "KV_REST_API_URL", "KV_REST_API_TOKEN", "KV_REST_API_READ_ONLY_TOKEN"],
+      "env": ["KV_URL", "KV_REST_API_URL", "KV_REST_API_TOKEN", "KV_REST_API_READ_ONLY_TOKEN", "REDIS_HOST", "REDIS_PASSWORD", "REDIS_PORT"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "lint": {},
