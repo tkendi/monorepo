@@ -5,15 +5,32 @@
   "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint \"**/*.ts*\""
+    "lint": "eslint \"**/*.ts*\"",
+    "storybook": "storybook dev -p 6006 -s ./public",
+    "build-storybook": "storybook build -s public"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.1",
+    "@storybook/addon-interactions": "^7.6.1",
+    "@storybook/addon-links": "^7.6.1",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.6.1",
+    "@storybook/react": "^7.6.1",
+    "@storybook/react-webpack5": "^7.6.1",
+    "@storybook/test": "^7.6.1",
     "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",
     "eslint": "^7.32.0",
-    "eslint-config-custom": "*",
-    "react": "^17.0.2",
+    "eslint-config-custom": "workspace:*",
+    "react": "18.2.0",
+    "react-dom": "^18.2.0",
+    "sb": "^6.5.16",
+    "storybook": "^7.6.1",
     "tsconfig": "*",
     "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@nivo/line": "^0.80.0",
+    "igniteui-react-charts": "^18.1.3"
   }
 }
