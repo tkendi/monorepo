@@ -3,7 +3,7 @@
 import { ReactNode, useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 
-import SearchModalOverlay from './overlay'
+import SearchModalOverlay from '../../../apps/finance/components/organisms/Nav/SearchModal/overlay'
 
 const PortalModal = ({ children }: React.PropsWithChildren) => {
     const [domReady, setDomReady] = useState<any>(null)
@@ -13,7 +13,6 @@ const PortalModal = ({ children }: React.PropsWithChildren) => {
     return (
         domReady && createPortal(
             <>
-                <SearchModalOverlay />
                 {children}
             </>,
             domReady
