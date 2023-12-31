@@ -1,12 +1,12 @@
 {
-    // lint setting
-    "editor.formatOnSave": true,
-    "[javascript]": {
-      "editor.formatOnSave": true
-    },
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
-    },
-    "prettier.requireConfig": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // lint setting
+  "editor.formatOnSave": "explicit",
+  "[javascript]": {
+    "editor.formatOnSave": "explicit"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "prettier.requireConfig": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
