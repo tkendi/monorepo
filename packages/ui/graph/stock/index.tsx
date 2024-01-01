@@ -4,9 +4,9 @@ import {
 } from "igniteui-react-charts";
 import React from "react";
 
-import { Props } from "./types";
-
 import useGenerateStockGraphData from "../../hooks/useGenerateStockGraphData";
+
+import { Props } from "./types";
 
 IgrFinancialChartModule.register();
 
