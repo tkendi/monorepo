@@ -47,6 +47,9 @@ importers:
       '@vercel/kv':
         specifier: ^0.2.1
         version: 0.2.3
+      autoprefixer:
+        specifier: ^10.4.16
+        version: 10.4.16(postcss@8.4.31)
       axios:
         specifier: ^1.3.5
         version: 1.5.1
@@ -68,6 +71,12 @@ importers:
       next-themes:
         specifier: ^0.2.1
         version: 0.2.1(next@14.0.2)(react-dom@18.2.0)(react@18.2.0)
+      postcss:
+        specifier: ^8.4.31
+        version: 8.4.31
+      prettier:
+        specifier: ^2.8.7
+        version: 2.8.8
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -83,6 +92,9 @@ importers:
       typescript:
         specifier: 5.0.4
         version: 5.0.4
+      ui:
+        specifier: workspace:*
+        version: link:../../packages/ui
       zustand:
         specifier: ^4.3.8
         version: 4.4.1(@types/react@18.0.33)(react@18.2.0)
@@ -126,18 +138,15 @@ importers:
       deepmerge:
         specifier: ^4.3.1
         version: 4.3.1
-      eslint:
-        specifier: 8.38.0
-        version: 8.38.0
       eslint-config-custom:
         specifier: 'workspace: *'
         version: link:../../packages/eslint-config-custom
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
-      prettier:
-        specifier: ^2.8.7
-        version: 2.8.8
+      tsconfig:
+        specifier: 'workspace: *'
+        version: link:../../packages/tsconfig
 
   apps/admin:
     dependencies:
@@ -410,9 +419,6 @@ importers:
       autoprefixer:
         specifier: ^10.4.16
         version: 10.4.16(postcss@8.4.31)
-      eslint:
-        specifier: 8.24.0
-        version: 8.24.0
       eslint-config-custom:
         specifier: 'workspace: *'
         version: link:../../packages/eslint-config-custom
@@ -443,6 +449,9 @@ importers:
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.3.5)
+      tsconfig:
+        specifier: 'workspace: *'
+        version: link:../../packages/tsconfig
       typescript:
         specifier: ^5.1.6
         version: 5.3.3
@@ -12320,7 +12329,6 @@ packages:
       picocolors: 1.0.0
       postcss: 8.4.31
       postcss-value-parser: 4.2.0
-    dev: true
 
   /autoprefixer@9.8.8:
     resolution: {integrity: sha512-eM9d/swFopRt5gdJ7jrpCwgvEMIayITpojhkkSMRsFHYuH5bkSQ4p/9qTEHtmNudUZh22Tehu7I6CxAW0IXTKA==}
@@ -16409,7 +16417,6 @@ packages:
 
   /fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
-    dev: true
 
   /fragment-cache@0.2.1:
     resolution: {integrity: sha512-GMBAbW9antB8iZRHLoGw0b3HANt57diZYFO/HL1JGIC1MjKrdmhxvrJbupnVvpys0zsz7yBApXdQyfepKly2kA==}
@@ -19764,7 +19771,6 @@ packages:
   /normalize-range@0.1.2:
     resolution: {integrity: sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /normalize-url@4.5.1:
     resolution: {integrity: sha512-9UZCFRHQdNrfTpGg8+1INIg93B6zE0aXMVFkw1WFwvO4SlZywU6aLg5Of0Ap/PgcbSw4LNxvMWXMeugwMCX0AA==}
@@ -20681,7 +20687,6 @@ packages:
 
   /postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
-    dev: true
 
   /postcss@7.0.39:
     resolution: {integrity: sha512-yioayjNbHn6z1/Bywyb2Y4s3yvDAeXGOyxqD+LnVOinq6Mdmd++SW2wUNVzavyyHxd6+DxzWGIuosg6P1Rj8uA==}

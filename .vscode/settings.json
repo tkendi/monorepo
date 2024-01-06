@@ -2,7 +2,8 @@
   // lint setting
   "editor.formatOnSave": "explicit",
   "[javascript]": {
-    "editor.formatOnSave": "explicit"
+    "editor.formatOnSave": "explicit",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
