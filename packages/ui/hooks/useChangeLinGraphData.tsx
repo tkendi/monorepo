@@ -10,30 +10,30 @@ import { LineGraphProps } from "../graph/line/types/index.d";
 type graphDataListType = LineGraphProps["graphData"];
 
 const useChangeLineGraphData = () => {
-    const handleChangeGraphData = <T extends graphDataListType>(
-        originDataList: any[],
-    ): T => {
-        if (!originDataList) return [] as unknown as T;
-        originDataList = [...originDataList].reverse();
-        const graphDataList = [
-            {
-                id: originDataList.at(0)?.itmsNm,
-                color: "hsl(134, 70%, 50%)",
-                data: [],
-            },
-        ] as unknown as T;
+  const handleChangeGraphData = <T extends graphDataListType>(
+    originDataList: any[],
+  ): T => {
+    if (!originDataList) return [] as unknown as T;
+    originDataList = [...originDataList].reverse();
+    const graphDataList = [
+      {
+        id: originDataList.at(0)?.itmsNm,
+        color: "hsl(134, 70%, 50%)",
+        data: [],
+      },
+    ] as unknown as T;
 
-        originDataList.forEach(item => {
-            graphDataList.at(0)?.data.push({
-                x: item.basDt,
-                y: item.mkp,
-            });
-        });
+    originDataList.forEach(item => {
+      graphDataList.at(0)?.data.push({
+        x: item.basDt,
+        y: item.mkp,
+      });
+    });
 
-        return graphDataList;
-    };
+    return graphDataList;
+  };
 
-    return { handleChangeGraphData };
+  return { handleChangeGraphData };
 };
 
 export default useChangeLineGraphData;

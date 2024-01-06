@@ -1,2 +1,2 @@
-export { breakPoints } from "./breakPoints"
-export { themes } from "./theme"
+export { breakPoints } from "./breakPoints";
+export { themes } from "./theme";
