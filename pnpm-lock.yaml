@@ -38,6 +38,9 @@ importers:
       '@apollo/client':
         specifier: ^3.7.13
         version: 3.8.4(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
+      '@apollo/experimental-nextjs-app-support':
+        specifier: ^0.4.1
+        version: 0.4.3(@apollo/client@3.8.4)(next@14.0.2)(react@18.2.0)
       '@stitches/react':
         specifier: ^1.2.8
         version: 1.2.8(react@18.2.0)
@@ -908,6 +911,21 @@ packages:
       react: ^18
     dependencies:
       '@apollo/client': 3.8.1(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
+      next: 14.0.2(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      server-only: 0.0.1
+      superjson: 1.13.3
+      ts-invariant: 0.10.3
+    dev: false
+
+  /@apollo/experimental-nextjs-app-support@0.4.3(@apollo/client@3.8.4)(next@14.0.2)(react@18.2.0):
+    resolution: {integrity: sha512-UrgLMUIW7SFmeJyLvqh0E8KRvo6Nd/zzbUFt0ENT3BRa7z7kGsCk7I+kZEZEAn13nqlTC3M4VPS6tOfvtLFhxQ==}
+    peerDependencies:
+      '@apollo/client': '>=3.8.0-rc || ^3.8.0'
+      next: ^13.4.1
+      react: ^18
+    dependencies:
+      '@apollo/client': 3.8.4(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
       next: 14.0.2(@babel/core@7.23.5)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       server-only: 0.0.1
