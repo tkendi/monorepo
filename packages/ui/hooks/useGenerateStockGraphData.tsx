@@ -18,12 +18,8 @@ const useGenerateStockGraphData = () => {
     const graphDataList = [] as unknown as T;
 
     originDataList.forEach(item => {
-      const baseDate = item.basDt;
-      const year = baseDate.slice(0, 4);
-      const month = baseDate.slice(4, 6) - 1;
-      const day = baseDate.slice(6);
       graphDataList.push({
-        Date: new Date(year, month, day),
+        Date: new Date(item.basDt),
         Open: Number(item.mkp),
         High: Number(item.hipr),
         Low: Number(item.lopr),
