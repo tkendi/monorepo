@@ -9,7 +9,7 @@
     },
     "accounts#build": {
       "dependsOn": ["^build"],
-      "env": ["KV_URL", "KV_REST_API_URL", "KV_REST_API_TOKEN", "KV_REST_API_READ_ONLY_TOKEN", "REDIS_HOST", "REDIS_PASSWORD", "REDIS_PORT", "NEXT_PUBLIC_GITHUB_OAUTH_SECRET_KEY", "NEXT_PUBLIC_GITHUB_OAUTH_CLIENT_ID"],
+      "env": ["KV_URL", "KV_REST_API_URL", "KV_REST_API_TOKEN", "KV_REST_API_READ_ONLY_TOKEN", "REDIS_HOST", "REDIS_PASSWORD", "REDIS_PORT", "NEXT_PUBLIC_GITHUB_OAUTH_SECRET_KEY", "NEXT_PUBLIC_GITHUB_OAUTH_CLIENT_ID", "NEXT_PUBLIC_GOOGLE_CLIENT_ID", ""],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "finance#build": {
